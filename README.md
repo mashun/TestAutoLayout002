@@ -5,4 +5,7 @@
 :smile:
 
 
-![Alt Text](https://github.com/mashun/TestAutoLayout002/raw/master/path/to/yanshi.gif)
+<!--![Alt Text](https://github.com/mashun/TestAutoLayout002/raw/master/path/to/yanshi.gif)-->
+
+
+![Alt Text](https://github.com/{mashun}/{TestAutoLayout002}/raw/master/path/to/yanshi.gif)
