@@ -90,7 +90,7 @@
 		48E684711B0F242B001239D3 /* FirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewCell.m; sourceTree = "<group>"; };
 		4E85B6291B132D8B00D2FEE2 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdViewController.h; path = ../../ThirdViewController.h; sourceTree = "<group>"; };
 		4E85B62A1B132D8B00D2FEE2 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdViewController.m; path = ../../ThirdViewController.m; sourceTree = "<group>"; };
-		4E91C3C91B831BBB002A661F /* yanshi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yanshi.gif; sourceTree = "<group>"; };
+		4E91C3C91B831BBB002A661F /* yanshi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = yanshi.gif; path = TestAutoLayout003/yanshi.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +114,7 @@
 		48E683EA1B0EC4A7001239D3 = {
 			isa = PBXGroup;
 			children = (
+				4E91C3C91B831BBB002A661F /* yanshi.gif */,
 				48E683F51B0EC4A7001239D3 /* TestAutoLayout003 */,
 				48E6840F1B0EC4A7001239D3 /* TestAutoLayout003Tests */,
 				48E683F41B0EC4A7001239D3 /* Products */,
@@ -147,7 +148,6 @@
 				4E85B62A1B132D8B00D2FEE2 /* ThirdViewController.m */,
 				48E684681B0EFABD001239D3 /* FirstTableViewCell.h */,
 				48E684711B0F242B001239D3 /* FirstTableViewCell.m */,
-				4E91C3C91B831BBB002A661F /* yanshi.gif */,
 				48E684001B0EC4A7001239D3 /* Main.storyboard */,
 				48E684031B0EC4A7001239D3 /* Images.xcassets */,
 				48E684051B0EC4A7001239D3 /* LaunchScreen.xib */,
