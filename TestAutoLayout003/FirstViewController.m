@@ -50,7 +50,7 @@
 
 - (void)requestDB {
     _dic = @{@"title": @"titletitletitletitletitletitletitletitletitletitletitletitletitletitletitle",
-             @"内容": @"eontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontent"};
+             @"content": @"eontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontenteontent"};
     [_tableView reloadData];
 }
 
