@@ -9,4 +9,4 @@
 :clap:
 
 
-![Alt Text](https://github.com/{user}/{repo}/raw/master/path/to/image.gif)
+![image](https://github.com/mashun/TestAutoLayout002/raw/master/yanshi.jpg)
