@@ -4,4 +4,5 @@
 第一次上传...
 :smile:
 
-![image](https://github.com/mashun/TestAutoLayout002/blob/master/yanshi.gif)
+
+![Alt Text](https://github.com/mashun/TestAutoLayout002/raw/master/path/to/yanshi.gif)
