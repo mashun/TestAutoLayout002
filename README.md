@@ -9,4 +9,4 @@
 :clap:
 
 
-![image](http://github.com/mashun/TestAutoLayout002/raw/master/images-folder/yanshi.jpg)
+![image](https://github.com/mashun/TestAutoLayout002/raw/master/images-folder/yanshi.gif)
