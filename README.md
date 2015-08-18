@@ -8,5 +8,4 @@
 :+1:
 :clap:
 
-
 ![image](https://github.com/mashun/TestAutoLayout002/raw/master/yanshi.gif)
