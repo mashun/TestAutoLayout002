@@ -5,7 +5,7 @@
 :smile:
 
 
-![pic](https://github.com/mashun/TestAutoLayout002/raw/master/path/to/yanshi.gif)
+![pic](https://cloud.githubusercontent.com/assets/8759050/9378543/e545756e-4754-11e5-9eaa-3b2a7ce9a034.jpg)
 
 
 
