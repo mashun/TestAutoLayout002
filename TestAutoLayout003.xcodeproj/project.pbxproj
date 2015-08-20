@@ -28,7 +28,6 @@
 		48E684701B0F21DE001239D3 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E6846F1B0F21DE001239D3 /* UIViewAdditions.m */; };
 		48E684721B0F242B001239D3 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E684711B0F242B001239D3 /* FirstTableViewCell.m */; };
 		4E85B62B1B132D8B00D2FEE2 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E85B62A1B132D8B00D2FEE2 /* ThirdViewController.m */; };
-		4E91C3CA1B831BBB002A661F /* yanshi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4E91C3C91B831BBB002A661F /* yanshi.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +89,6 @@
 		48E684711B0F242B001239D3 /* FirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewCell.m; sourceTree = "<group>"; };
 		4E85B6291B132D8B00D2FEE2 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdViewController.h; path = ../../ThirdViewController.h; sourceTree = "<group>"; };
 		4E85B62A1B132D8B00D2FEE2 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdViewController.m; path = ../../ThirdViewController.m; sourceTree = "<group>"; };
-		4E91C3C91B831BBB002A661F /* yanshi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = yanshi.gif; path = TestAutoLayout003/yanshi.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +112,6 @@
 		48E683EA1B0EC4A7001239D3 = {
 			isa = PBXGroup;
 			children = (
-				4E91C3C91B831BBB002A661F /* yanshi.gif */,
 				48E683F51B0EC4A7001239D3 /* TestAutoLayout003 */,
 				48E6840F1B0EC4A7001239D3 /* TestAutoLayout003Tests */,
 				48E683F41B0EC4A7001239D3 /* Products */,
@@ -296,7 +293,6 @@
 			files = (
 				48E684021B0EC4A7001239D3 /* Main.storyboard in Resources */,
 				48E684071B0EC4A7001239D3 /* LaunchScreen.xib in Resources */,
-				4E91C3CA1B831BBB002A661F /* yanshi.gif in Resources */,
 				48E684041B0EC4A7001239D3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
