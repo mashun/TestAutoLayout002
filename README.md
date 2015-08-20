@@ -5,7 +5,7 @@
 :smile:
 
 
-![pic](https://cloud.githubusercontent.com/assets/8759050/9378543/e545756e-4754-11e5-9eaa-3b2a7ce9a034.jpg)
+![pic](https://cloud.githubusercontent.com/assets/8759050/9378580/291fcd8e-4755-11e5-8ed6-02903198145b.gif)
 
 
 
