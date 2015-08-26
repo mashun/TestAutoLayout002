@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
+#pragma mark - UIViewAdditions类是一种布局的第三方类库,用着非常方便
+#pragma mark - Masonry是手写代码自动布局的第三方类库,爱不释手
+
 @interface AppDelegate ()
 
 @end

@@ -32,6 +32,7 @@
     bigView.layer.masksToBounds = YES;
     [self.view addSubview:bigView];
     
+#pragma mark - 给背景图添加约束(添加的约束必须要能够确定该控件的位置,不然编译的时候就会报错)
     [bigView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(40 + 64);
         make.height.mas_equalTo(88);
@@ -59,7 +60,7 @@
     secondTf.leftView = leftView1;
     [bigView addSubview:secondTf];
     
-    
+    //添加约束
     [firstTf mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(0);
         make.height.mas_equalTo(44);
@@ -67,6 +68,7 @@
         make.left.mas_equalTo(0);
     }];
 
+    //添加约束
     [secondTf mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(44);
         make.height.mas_equalTo(44);
@@ -84,7 +86,7 @@
                     action:@selector(first)
           forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:loginButton];
-    
+    //添加约束
     [loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(bigView.mas_bottom).with.offset(20);
         make.right.mas_equalTo(-15);
@@ -100,6 +102,7 @@
     [registerButton addTarget:self action:@selector(registerButton) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:registerButton];
     
+    //添加约束
     [registerButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(loginButton.mas_left);
         make.top.equalTo(loginButton.mas_bottom).with.offset(20);
@@ -109,7 +112,7 @@
 }
 
 - (void)registerButton {
-    
+    NSLog(@"注册");
 }
 
 - (void)first {
@@ -117,6 +120,7 @@
     [self.navigationController pushViewController:firstVC animated:YES];
 }
 
+//点击空白区域收回键盘
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
 }

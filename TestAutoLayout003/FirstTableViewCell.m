@@ -58,6 +58,7 @@
         _titleLabel.text   = dict[@"title"];
         _contentLabel.text = dict[@"content"];
         
+#pragma mark - 实现Label的自适应宽高度
         NSDictionary *dic1 = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:16.], NSFontAttributeName, nil];
         CGSize size1 = [dict[@"title"] boundingRectWithSize:CGSizeMake(SCREEN_WIDTH - 175, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic1 context:nil].size;
         _titleLabel.frame  = CGRectMake(90, 10, SCREEN_WIDTH - 175, size1.height);
@@ -69,6 +70,7 @@
     }
 }
 
+#pragma mark - 实现Label的自适应宽高度
 + (CGFloat)getCellHeight:(NSDictionary *)dic
 {
     CGSize size1, size2;

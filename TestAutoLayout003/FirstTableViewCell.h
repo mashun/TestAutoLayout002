@@ -11,6 +11,7 @@
 
 @protocol FirstTableViewCellDelegate <NSObject>
 
+//代理
 - (void)clickDetailButton:(FirstTableViewCell *)cell;
 
 @end
@@ -23,7 +24,7 @@
     UIButton *_detaileButton;
 }
 
-@property (nonatomic, strong)NSDictionary *dict;
+@property (nonatomic, strong) NSDictionary *dict;
 @property (nonatomic, assign) id<FirstTableViewCellDelegate> delegate;
 
 + (CGFloat)getCellHeight:(NSDictionary *)dic;
