@@ -10,7 +10,9 @@
 #import "FirstTableViewCell.h"
 
 
-@interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate, FirstTableViewCellDelegate>
+@interface FirstViewController ()<UITableViewDataSource,
+                                  UITableViewDelegate,
+                                  FirstTableViewCellDelegate>
 {
     UITableView  *_tableView;
     NSDictionary *_dic;
@@ -25,14 +27,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"tableView的自适应";
     
-    
-    
-    
     //做自适应的时候,只需要对该视图的父试图做约束就可以,不需要在对其自身添加约束
-    //例如:UITableView的cell要想实现自适应,只需要对UITableView
-    
+    //例如:UITableView的cell要想实现自适应,只需要对UITableView做约束就OK拉
     __weak typeof(self) weakSelf = self;
-    
     _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     _tableView.translatesAutoresizingMaskIntoConstraints = NO;
     _tableView.delegate = self;
@@ -40,12 +37,12 @@
     _tableView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:_tableView];
     
+    //添加约束
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         UIEdgeInsets padding = UIEdgeInsetsMake(0, 0, 0, 0);
         make.edges.equalTo(weakSelf.view).with.insets(padding);
     }];
     [self requestDB];
-    
 }
 
 - (void)requestDB {
@@ -85,7 +82,6 @@
 {
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
     [_tableView reloadData];
-    
 }
 //8.0之前可以用此方法判断手机是否转屏
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
@@ -94,7 +90,6 @@
     [_tableView reloadData];
     NSLog(@"------");
 }
-
 
 #pragma mark - FirstTableViewCellDelegate
 - (void)clickDetailButton:(FirstTableViewCell *)cell

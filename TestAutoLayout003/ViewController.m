@@ -62,16 +62,14 @@
     
     //添加约束
     [firstTf mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(0);
         make.height.mas_equalTo(44);
         make.right.mas_equalTo(-0);
-        make.left.mas_equalTo(0);
+        make.left.with.top.mas_equalTo(0);
     }];
 
     //添加约束
     [secondTf mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(44);
-        make.height.mas_equalTo(44);
+        make.height.with.top.mas_equalTo(44);
         make.right.mas_equalTo(-0);
         make.left.mas_equalTo(0);
     }];
@@ -89,8 +87,8 @@
     //添加约束
     [loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(bigView.mas_bottom).with.offset(20);
-        make.right.mas_equalTo(-15);
-        make.left.mas_equalTo(15);
+        make.right.equalTo(bigView.mas_right);
+        make.left.equalTo(bigView.mas_left);
         make.height.mas_equalTo(44);
     }];
     
@@ -106,8 +104,8 @@
     [registerButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(loginButton.mas_left);
         make.top.equalTo(loginButton.mas_bottom).with.offset(20);
-        make.height.equalTo(@44);
-        make.right.equalTo(@-15);
+        make.height.equalTo(loginButton.mas_height);
+        make.right.equalTo(loginButton.mas_right);
     }];
 }
 

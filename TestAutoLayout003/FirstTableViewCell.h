@@ -18,14 +18,14 @@
 
 @interface FirstTableViewCell : UITableViewCell
 {
-    UILabel *_titleLabel;
-    UILabel *_contentLabel;
+    UILabel     *_titleLabel;
+    UILabel     *_contentLabel;
     UIImageView *_photoImage;
-    UIButton *_detaileButton;
+    UIButton    *_detaileButton;
 }
 
 @property (nonatomic, strong) NSDictionary *dict;
-@property (nonatomic, assign) id<FirstTableViewCellDelegate> delegate;
+@property (nonatomic, assign) id <FirstTableViewCellDelegate> delegate;
 
 + (CGFloat)getCellHeight:(NSDictionary *)dic;
 

@@ -10,14 +10,14 @@
 
 @implementation FirstTableViewCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        
         _photoImage = [UIImageView new];
         _photoImage.frame = CGRectMake(15, 10, 60, 60);
         _photoImage.backgroundColor = [UIColor yellowColor];
+        _photoImage.layer.cornerRadius = 30;
+        _photoImage.layer.masksToBounds = YES;
         [self.contentView addSubview:_photoImage];
         
         _titleLabel = [[UILabel alloc] init];
@@ -44,15 +44,13 @@
     return self;
 }
 
-- (void)detailButton
-{
+- (void)detailButton {
     if (self.delegate && [self.delegate respondsToSelector:@selector(clickDetailButton:)]) {
         [self.delegate clickDetailButton:self];
     }
 }
 
-- (void)setDict:(NSDictionary *)dict
-{
+- (void)setDict:(NSDictionary *)dict {
     _dict = dict;
     if (dict) {
         _titleLabel.text   = dict[@"title"];
@@ -71,8 +69,7 @@
 }
 
 #pragma mark - 实现Label的自适应宽高度
-+ (CGFloat)getCellHeight:(NSDictionary *)dic
-{
++ (CGFloat)getCellHeight:(NSDictionary *)dic {
     CGSize size1, size2;
     if (dic) {
         NSDictionary *dic1 = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:16.], NSFontAttributeName, nil];
